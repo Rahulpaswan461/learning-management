@@ -72,7 +72,7 @@ The server will run at `http://localhost:8000`.
 ### Admin Routes
 1. **Add Course**
    - **Method**: POST
-   - **Endpoint**: `/api/admin/course`
+   - **Endpoint**: `/api/course/add`
    - **Body**:
      ```json
      {
@@ -85,7 +85,7 @@ The server will run at `http://localhost:8000`.
 
 2. **Update Course**
    - **Method**: PUT
-   - **Endpoint**: `/api/admin/course/:id`
+   - **Endpoint**: `/apicourse/update/:courseId`
    - **Body**:
      ```json
      {
@@ -96,11 +96,11 @@ The server will run at `http://localhost:8000`.
 
 3. **Delete Course**
    - **Method**: DELETE
-   - **Endpoint**: `/api/admin/course/:id`
+   - **Endpoint**: `/api/course/delete/:courseId`
 
 4. **Get All Courses**
    - **Method**: GET
-   - **Endpoint**: `/api/course`
+   - **Endpoint**: `/api/course/get/allCourse`
 
 ### User Routes
 1. **Signup**

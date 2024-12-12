@@ -1,5 +1,5 @@
 function isAdmin(req,res,next){
-    if(res.user.role === "user"){
+    if(req.user.role === "user"){
         return res.status(403).json({error:"User are not allowed to created courses : "})
     }
     return next()

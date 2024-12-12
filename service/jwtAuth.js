@@ -9,11 +9,11 @@ function createTokenForAuthenticateUser(user){
         role: user.role
     }
 
-    return JWT.sign(payload,secret)
+    return JWT.sign(payload,process.env.SECRET)
 }
 
 function verifyTokenForUser(token){
-    return JWT.verify(token,secret)
+    return JWT.verify(token,process.env.SECRET)
 }
 
 module.exports = {
